@@ -1,0 +1,23 @@
+{
+  "name": "restfullapi",
+  "version": "1.0.0",
+  "description": "tutorial meme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "node",
+    "api"
+  ],
+  "author": "Jordan Di Palma",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.15",
+    "morgan": "^1.9.1"
+  }
+}

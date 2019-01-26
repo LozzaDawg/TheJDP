@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="A site all about yours truely">
+    <meta name="keywords" content="games, game development, programming, personal website">
+    <meta name="author" content="Jordan Di Palma">
+    <title>The JDP | Games</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1>The <span class="highlight">JDP</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li class="current"><a href="creative">Creative</a></li>
+            <li><a href="logs">Logs</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="main">
+      <div class="container">
+        <article id="main-column">
+          <h1 class="page-title">My Stuff</h1>
+          <ul id="games">
+            <li>
+              <h3>Game 1</h3>
+              <p>Mauris aliquam dictum libero, eget feugiat arcu. Proin lorem ipsum, vehicula ac faucibus id, vestibulum at magna. Sed facilisis eros sem, non tincidunt arcu elementum sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac lacinia mi, id volutpat nunc. Mauris vitae odio vitae turpis porttitor cursus. Fusce consectetur tempor enim in sollicitudin. Vestibulum ultrices nulla nulla. Nam tempor nisl velit, sit amet molestie dolor scelerisque a.</p>
+            </li>
+            <li>
+              <h3>Game 2</h3>
+              <p>Mauris aliquam dictum libero, eget feugiat arcu. Proin lorem ipsum, vehicula ac faucibus id, vestibulum at magna. Sed facilisis eros sem, non tincidunt arcu elementum sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac lacinia mi, id volutpat nunc. Mauris vitae odio vitae turpis porttitor cursus. Fusce consectetur tempor enim in sollicitudin. Vestibulum ultrices nulla nulla. Nam tempor nisl velit, sit amet molestie dolor scelerisque a.</p>
+            </li>
+            <li>
+              <h3>Game 3</h3>
+              <p>Mauris aliquam dictum libero, eget feugiat arcu. Proin lorem ipsum, vehicula ac faucibus id, vestibulum at magna. Sed facilisis eros sem, non tincidunt arcu elementum sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac lacinia mi, id volutpat nunc. Mauris vitae odio vitae turpis porttitor cursus. Fusce consectetur tempor enim in sollicitudin. Vestibulum ultrices nulla nulla. Nam tempor nisl velit, sit amet molestie dolor scelerisque a.</p>
+            </li>
+          </ul>
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>Suggest Game Ideas</h3>
+
+            <form id="gameIdea">
+              <div>
+                <label>Name</label><br>
+                <input name="name" type="text" placeholder="Anonymous">
+              </div>
+              <div>
+                <label>Idea</label><br>
+                <input name = "idea" type="text" placeholder="Your epic game idea"></input>
+              </div>
+              <button class="button_1" onclick="submitidea()">Send</button>
+            </form>
+
+            <script>
+
+            function submitidea(){
+              console.log('mem')
+              var textArea = document.getElementById("gameIdea");
+              var idea = textArea.elements["idea"].value;
+              console.log(idea);
+            }
+            </script>
+
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Don't steal my god dam website. Copywrite &copy; 2018</p>
+    </footer>
+
+  </body>
+</html>
